@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def get_gst_status():
-    url = "https://gst-return-status.p.rapidapi.com/free/gstin/27ANGPS5101F1Z6"
+    url = "https://gst-return-status.p.rapidapi.com/free/gstin/27AN7PS5101F1Z6"
 
     headers = {
         "Content-Type": "application/json",
@@ -17,7 +17,10 @@ def get_gst_status():
     response = requests.request("GET", url, headers=headers)
 
     a = json.loads(response.text)
-    return jsonify(success=a['success'])
+    if a['success']:
+        return "<h1>Verified</h1>"
+    else:
+        return "<h2>Store on blockchain</h2>"
 
 if __name__ == '__main__':
     app.run(debug=True)
