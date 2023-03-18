@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GST Checker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<h1 class="text-center mb-5">GST Checker</h1>
+		<form method="POST" action="/" class="text-center">
+			<div class="form-group">
+				<label for="gst_image">Upload an Image containing GST Number:</label>
+				<input type="file" id="gst_image" name="gst_image" accept="image/*" required>
+			</div>
+			<button type="submit" class="btn btn-primary mt-3">Check GST</button>
+		</form>
+	    {% if gst_result %}
+			{% if gst_result == "Invalid GST Number" %}
+				<p class="text-center mt-3">Invalid GST Number entered. Please try again.</p>
+			{% else %}
+				<p class="text-center mt-3">Entered GST Number is valid and registered under the name "{{ gst_result }}".</p>
+			{% endif %}
+		{% endif %}
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
