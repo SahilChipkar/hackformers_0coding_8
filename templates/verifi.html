@@ -12,29 +12,16 @@
 			<div class="card-body">
 				<p class="card-text">Extracted Information:</p>
 				<ul>
-					<li>PAN: <span id="pan"></span></li>
-					<li>GSTIN: <span id="gstin"></span></li>
-					<li>Company Type: <span id="ctb"></span></li>
-					<li>Trade Name: <span id="tradeName"></span></li>
+					<li>PAN : {{a.data.pan}} <span id="pan"></span></li>
+					<li>GSTIN : {{a.data.gstin}} <span id="gstin"></span></li>
+					<li>Company Type : {{a.data.ctb}} <span id="ctb"></span></li>
+					<li>Trade Name : {{a.data.tradeName}}<span id="tradeName"></span></li>
 				</ul>
 			</div>
 		</div>
         <!-- <button class="btn btn-primary" onclick="location.href='/check'">Verify GST</button> -->
     </div>
     
-    <script>
-        // Get the extracted information from Flask server
-        fetch('/info')
-            .then(response => response.json())
-            .then(data => {
-                // Display the information on the webpage
-                document.getElementById('pan').textContent = data.pan;
-                document.getElementById('gstin').textContent = data.gstin;
-                document.getElementById('ctb').textContent = data.ctb;
-                document.getElementById('tradeName').textContent = data.tradeName;
-            })
-            .catch(error => console.error(error));
-    </script>
     
     <!-- Add Bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/XD1i4jU8a7GXpVo" crossorigin="anonymous"></script>
