@@ -38,7 +38,7 @@ def checking():
     
     a = json.loads(response.text)
     if a['success']:
-        return render_template('verifi.html')
+        return render_template('verifi.html',a=a)
     else:
         return "<h2>Store on blockchain</h2>"
    
