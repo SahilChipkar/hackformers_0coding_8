@@ -13,6 +13,13 @@ We are happy to receive feedback and answer any Qs about the project and its fut
 <hr>
   
  # Deployment 🚀
+
+
+
+https://user-images.githubusercontent.com/102038259/226156403-c6ab8b99-99bb-4bdd-a788-68d709cb0e85.mp4
+
+
+
  1. Create a virtual environment: `python -m venv myenv`
  2. Activate the virtual environment: `myenv\Scripts\activate`
  3. Install dependencies: `pip install -r requirements.txt`
