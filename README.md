@@ -12,8 +12,15 @@ We are happy to receive feedback and answer any Qs about the project and its fut
  
 <hr>
   
- # Deployment 
- 
+ # Deployment 🚀
+ 1. Create a virtual environment: `python -m venv myenv`
+ 2. Activate the virtual environment: `myenv\Scripts\activate`
+ 3. Install dependencies: `pip install -r requirements.txt`
+ 4. Download pytesseract [Refer this question](https://stackoverflow.com/questions/41652335/pytesseract-error-windows-error-error-2)
+ 5. Create a Flask app: Create a Flask app with the necessary routes and functionality.
+ 6. Test the Flask app locally: Test the Flask app locally using the command `flask run`
+ 7. Deploy | Testing | Scaling : [Refer this blog for deployment](https://www.codespeedy.com/host-your-web-application-on-pythonanywhere/)
+
  
 <hr>
   
@@ -29,7 +36,7 @@ Our project aims to provide a tool for verifying the validity of GST numbers in 
 
 ✅ Used MachineLearning to text from image OCR
 
-✅ Created template ready for api to on 3rd party task 
+✅ Created template ready for api to add on 3rd party task 
 
 
 
