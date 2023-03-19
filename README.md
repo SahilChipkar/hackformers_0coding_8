@@ -18,6 +18,11 @@ We are happy to receive feedback and answer any Qs about the project and its fut
 
 https://user-images.githubusercontent.com/102038259/226156403-c6ab8b99-99bb-4bdd-a788-68d709cb0e85.mp4
 
+
+  
+
+  
+  
 Final Consideration : https://docs.google.com/presentation/d/1mLfaqLrcuEH-mercl-GnUl8pg2ong9JFlaXI-pEHEpQ/edit#slide=id.p
 
 
