@@ -18,7 +18,7 @@ def checking():
     img = Image.open(BytesIO(img_file.read()))
     extracted_info = pytesseract.image_to_string(img)
     # print(extracted_info)
-    gst_pattern = r"\b\d{2}[A-Z]{5}\d{4}[A-Z]{1}\d[Z,z,2]{1}\d{1}\b"
+    gst_pattern = r'\b\d{2}[A-Z]{5}[0-9,A-Z]{4}[A-Z]{1}[0-9,A-Z]{1}[Z]{1}[0-9,A-Z]{1}\b'
     match = re.search(gst_pattern, extracted_info)
     if match:
         gst_number = match.group(0)
